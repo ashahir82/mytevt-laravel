@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('kursus');
             $table->timestamps();
         });
+
+        Schema::table('kursuses', function (Blueprint $table) {
+            $table->softDeletes();
+        });
     }
 
     /**

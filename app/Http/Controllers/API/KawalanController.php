@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\API\BaseController;
 
-class KawalanController extends Controller
+class KawalanController extends BaseController
 {
     //
     public function login(Request $request)

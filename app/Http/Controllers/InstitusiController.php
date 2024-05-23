@@ -21,8 +21,8 @@ class InstitusiController extends BaseController
     public function pusat_institusi(Request $request)
     {
         $pusat = $request->pusat;
-        $institusis = Kursus::select('kursus')
-        ->where('pusat', $pusat)->get();
+        $institusis = Kursus::select('id', 'kursus')
+        ->where('pusat',$pusat)->get();
         return $this->sendResponse($institusis, 'ok...');
     }
 }

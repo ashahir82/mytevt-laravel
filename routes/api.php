@@ -9,5 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::controller(KursusController::class)->group(function(){
-    Route::post('senarai-kursus', 'senarai_kursus')->name('senarai-kursus');
+    Route::get('senarai-kursus', 'senarai_kursus')->name('senarai-kursus');
 });

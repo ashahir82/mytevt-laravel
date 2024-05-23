@@ -10,7 +10,7 @@ class Kursus extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    protected $table = 'kursus';
+    protected $table = 'kursuses';
     protected $primaryKey = 'id';
 
     protected $fillable = [
